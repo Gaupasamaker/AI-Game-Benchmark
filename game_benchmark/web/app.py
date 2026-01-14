@@ -319,8 +319,8 @@ def list_result_files():
     """Lista archivos JSON de resultados disponibles."""
     json_files = []
     
-    # Buscar en el directorio del proyecto
-    for pattern in ["*.json", "results/*.json"]:
+    # Buscar en el directorio del proyecto y subdirectorios comunes
+    for pattern in ["*.json", "results/*.json", "datasets/*.json"]:
         for path in PROJECT_ROOT.glob(pattern):
             # Filtrar archivos que parecen ser resultados de torneos
             if path.name.startswith("."):
