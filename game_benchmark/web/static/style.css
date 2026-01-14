@@ -1,0 +1,347 @@
+/* ===== Variables ===== */
+:root {
+    --bg-dark: #0f0f1a;
+    --bg-card: #1a1a2e;
+    --bg-hover: #252540;
+    --accent: #6366f1;
+    --accent-glow: rgba(99, 102, 241, 0.3);
+    --success: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --text: #e2e8f0;
+    --text-dim: #94a3b8;
+    --border: #2d2d4a;
+    --radius: 12px;
+}
+
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* ===== Layout ===== */
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 2rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent), #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Navigation ===== */
+.nav {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background: var(--bg-hover);
+    color: var(--text);
+}
+
+.nav-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+/* ===== Views ===== */
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+/* ===== Controls Panel ===== */
+.controls-panel {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    padding: 20px;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.control-group label {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+select, input {
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    min-width: 120px;
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+/* ===== Buttons ===== */
+.btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #5558e3;
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+    background: #dc2626;
+}
+
+.btn-secondary {
+    background: var(--bg-hover);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+    background: var(--border);
+}
+
+/* ===== Game Container ===== */
+.game-container {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#game-canvas {
+    background: #0a0a12;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+.score-display {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.score.p1 {
+    color: #3b82f6;
+}
+
+.score.p2 {
+    color: #ef4444;
+}
+
+.vs {
+    color: var(--text-dim);
+    font-size: 1rem;
+}
+
+.tick-display {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+/* ===== Result Banner ===== */
+.result-banner {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--accent), #a855f7);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.result-banner.hidden {
+    display: none;
+}
+
+.result-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ===== Tournament ===== */
+.tournament-config {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: var(--radius);
+    max-width: 400px;
+}
+
+.tournament-config h2 {
+    margin-bottom: 20px;
+}
+
+.tournament-config .control-group {
+    margin-bottom: 16px;
+}
+
+.tournament-config .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tourney-results {
+    margin-top: 30px;
+}
+
+/* ===== Leaderboard ===== */
+.leaderboard {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.lb-row {
+    display: flex;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    align-items: center;
+}
+
+.lb-row:last-child {
+    border-bottom: none;
+}
+
+.lb-row.header {
+    background: var(--bg-hover);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--text-dim);
+}
+
+.lb-rank {
+    width: 50px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.lb-name {
+    flex: 1;
+    font-weight: 600;
+}
+
+.lb-elo {
+    width: 80px;
+    text-align: right;
+    font-weight: 700;
+}
+
+.lb-stats {
+    width: 100px;
+    text-align: right;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .controls-panel {
+        flex-direction: column;
+    }
+    
+    #game-canvas {
+        width: 100%;
+        height: auto;
+    }
+}

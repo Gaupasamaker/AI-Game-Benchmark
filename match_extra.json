@@ -1,0 +1,83 @@
+{
+  "game": "CarBall-v0",
+  "seed": 42,
+  "player_a": "player_1",
+  "player_b": "player_2",
+  "winner": "player_2",
+  "ticks": 588,
+  "rewards": {
+    "player_1": -7.0,
+    "player_2": 7.0
+  },
+  "final_scores": {
+    "player_1": 0,
+    "player_2": 7
+  },
+  "goal_events": [
+    {
+      "tick": 84,
+      "scorer": "player_2",
+      "scores": {
+        "player_1": 0,
+        "player_2": 1
+      }
+    },
+    {
+      "tick": 168,
+      "scorer": "player_2",
+      "scores": {
+        "player_1": 0,
+        "player_2": 2
+      }
+    },
+    {
+      "tick": 252,
+      "scorer": "player_2",
+      "scores": {
+        "player_1": 0,
+        "player_2": 3
+      }
+    },
+    {
+      "tick": 336,
+      "scorer": "player_2",
+      "scores": {
+        "player_1": 0,
+        "player_2": 4
+      }
+    },
+    {
+      "tick": 420,
+      "scorer": "player_2",
+      "scores": {
+        "player_1": 0,
+        "player_2": 5
+      }
+    },
+    {
+      "tick": 504,
+      "scorer": "player_2",
+      "scores": {
+        "player_1": 0,
+        "player_2": 6
+      }
+    },
+    {
+      "tick": 588,
+      "scorer": "player_2",
+      "scores": {
+        "player_1": 0,
+        "player_2": 7
+      }
+    }
+  ],
+  "anticheat": {
+    "config": {
+      "timeout_ms": 30.0,
+      "max_violations": 10,
+      "strict_mode": false
+    },
+    "violations": [],
+    "violation_counts": {}
+  }
+}

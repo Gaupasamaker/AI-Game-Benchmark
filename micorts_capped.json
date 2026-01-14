@@ -1,0 +1,3911 @@
+{
+  "matches": [
+    {
+      "game": "MicroRTS-v0",
+      "seed": 2746317213,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "baseline",
+      "winner": "player_1",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2660,
+        "player_2": 950
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 115,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 141,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 154,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 160,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 164,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 169,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 185,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 201,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 218,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 234,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 251,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 268,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 284,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 301,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 319,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 335,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 351,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 369,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 384,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 401,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 418,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 435,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 451,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 468,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 485,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 501,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 518,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 535,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 552,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 569,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 584,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 1181241943,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "baseline",
+      "winner": "player_1",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2540,
+        "player_2": 850
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 116,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 136,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 140,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 140,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 140,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 141,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 150,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 158,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 165,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 166,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 177,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 193,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 226,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 244,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 259,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 277,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 293,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 309,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 326,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 343,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 359,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 394,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 409,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 427,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 442,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 458,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 477,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 494,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 509,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 526,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 543,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 559,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 576,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 594,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 958682846,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "baseline",
+      "winner": "player_1",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2645,
+        "player_2": 950
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 115,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 140,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 141,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 142,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 144,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 146,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 178,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 179,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 179,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 179,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 179,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 180,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 180,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 180,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 181,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 182,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 182,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 183,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 183,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 185,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 186,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 190,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 190,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 195,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 234,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 235,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 235,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 235,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 235,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 236,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 242,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 250,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 260,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 261,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 268,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 285,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 302,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 318,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 334,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 352,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 368,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 385,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 401,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 419,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 434,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 451,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 468,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 485,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 502,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 517,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 534,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 551,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 568,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 584,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 3163119785,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "baseline",
+      "winner": "player_1",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2640,
+        "player_2": 850
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 115,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 140,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 140,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 141,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 141,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 142,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 143,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 143,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 144,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 146,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 148,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 162,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 165,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 169,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 183,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 200,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 217,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 233,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 251,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 267,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 284,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 301,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 317,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 332,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 351,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 367,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 384,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 400,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 417,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 432,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 450,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 466,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 484,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 500,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 518,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 533,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 550,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 568,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 582,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 600,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 1812140441,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "baseline",
+      "winner": "player_1",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2600,
+        "player_2": 950
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 115,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 136,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 140,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 160,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 160,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 161,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 161,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 161,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 161,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 162,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 162,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 162,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 164,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 164,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 165,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 166,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 179,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 184,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 184,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 188,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 195,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 223,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 239,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 255,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 274,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 306,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 323,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 339,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 356,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 374,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 389,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 406,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 423,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 438,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 457,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 473,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 489,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 507,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 522,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 539,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 555,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 573,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 589,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 2746317213,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2680,
+        "player_2": 4200
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 138,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 165,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 170,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 1181241943,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2680,
+        "player_2": 4200
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 165,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 168,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 958682846,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2585,
+        "player_2": 4050
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 165,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 168,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 169,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 3163119785,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2585,
+        "player_2": 4050
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 164,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 168,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 170,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 1812140441,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "econ",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 2585,
+        "player_2": 4050
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 138,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 139,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 164,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 168,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 170,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 2746317213,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "baseline",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 1690,
+        "player_2": 4050
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 112,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 120,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 133,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 137,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 211,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 291,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 482,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 1181241943,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "baseline",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 1690,
+        "player_2": 4050
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 112,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 120,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 133,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 211,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 291,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 482,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 958682846,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "baseline",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 1750,
+        "player_2": 4200
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 112,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 120,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 137,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 170,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 223,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 291,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 291,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 482,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 3163119785,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "baseline",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 1750,
+        "player_2": 4200
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 112,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 120,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 170,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 203,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 223,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 224,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 291,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 291,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 482,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "MicroRTS-v0",
+      "seed": 1812140441,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "agent_a": "baseline",
+      "agent_b": "random",
+      "winner": "player_2",
+      "ticks": 600,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "final_scores": {
+        "player_1": 1730,
+        "player_2": 4050
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 87,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_2"
+        },
+        {
+          "tick": 112,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 120,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 137,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 138,
+          "type": "zone_captured",
+          "zone": "mid",
+          "by": "player_1"
+        },
+        {
+          "tick": 206,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 207,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 208,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 209,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 210,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 211,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 223,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 287,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 288,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 289,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 290,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 291,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 291,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 376,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 377,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 481,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "soldier"
+        },
+        {
+          "tick": 482,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 482,
+          "type": "unit_killed",
+          "killer": "player_2",
+          "victim_type": "ranged"
+        },
+        {
+          "tick": 520,
+          "type": "unit_killed",
+          "killer": "player_1",
+          "victim_type": "ranged"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    }
+  ],
+  "leaderboard": {
+    "k_factor": 32.0,
+    "initial_elo": 1500.0,
+    "ratings": {
+      "econ": {
+        "elo": 1487.454522363676,
+        "games_played": 10,
+        "wins": 5,
+        "losses": 5,
+        "draws": 0,
+        "win_rate": 0.5
+      },
+      "baseline": {
+        "elo": 1391.477387717924,
+        "games_played": 10,
+        "wins": 0,
+        "losses": 10,
+        "draws": 0,
+        "win_rate": 0.0
+      },
+      "random": {
+        "elo": 1621.0680899184,
+        "games_played": 10,
+        "wins": 10,
+        "losses": 0,
+        "draws": 0,
+        "win_rate": 1.0
+      }
+    }
+  },
+  "total_matches": 15
+}

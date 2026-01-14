@@ -1,0 +1,95 @@
+{
+  "game": "TacticFPS-v0",
+  "seed": 42,
+  "player_a": "t1",
+  "player_b": "t2",
+  "agent_a": null,
+  "agent_b": null,
+  "sides": {},
+  "winner": "t2",
+  "ticks": 120,
+  "rewards": {
+    "t1": -9.699999999999982,
+    "t2": 0.0,
+    "ct1": 0.0,
+    "ct2": 0.0
+  },
+  "final_scores": {
+    "player_1": 0,
+    "player_2": 0
+  },
+  "goal_events": [],
+  "events": [],
+  "anticheat": {
+    "config": {
+      "timeout_ms": 30.0,
+      "max_violations": 10,
+      "strict_mode": false
+    },
+    "violations": [
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 14,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      },
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 16,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      },
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 18,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      },
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 20,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      },
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 22,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      },
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 24,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      },
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 26,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      },
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 28,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      },
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 30,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      },
+      {
+        "player_id": "t1",
+        "type": "invalid_action",
+        "tick": 32,
+        "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+      }
+    ],
+    "violation_counts": {
+      "t1": 10
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "game": "CarBall-v0",
+  "seed": 42,
+  "player_a": "player_1",
+  "player_b": "player_2",
+  "winner": "player_1",
+  "ticks": 2700,
+  "rewards": {
+    "player_1": 2.0,
+    "player_2": -2.0
+  },
+  "anticheat": {
+    "config": {
+      "timeout_ms": 30.0,
+      "max_violations": 10,
+      "strict_mode": false
+    },
+    "violations": [],
+    "violation_counts": {}
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "matches": [
+    {
+      "game": "CarBall-v0",
+      "seed": 1583632568,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 1454,
+      "rewards": {
+        "player_1": 7.0,
+        "player_2": -7.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 233702270,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 1.0,
+        "player_2": -1.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 390720550,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_2",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": -4.0,
+        "player_2": 4.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 3814392792,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2509,
+      "rewards": {
+        "player_1": 5.0,
+        "player_2": -5.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 442620549,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_2",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": -1.0,
+        "player_2": 1.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 3162160536,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 2.0,
+        "player_2": -2.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 3417870607,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2078,
+      "rewards": {
+        "player_1": 6.0,
+        "player_2": -6.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 888471078,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 5.0,
+        "player_2": -5.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 2164053707,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 1.0,
+        "player_2": -1.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 3852172260,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2348,
+      "rewards": {
+        "player_1": 4.0,
+        "player_2": -4.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 578841278,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": null,
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 0.0,
+        "player_2": 0.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 2008580896,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 2.0,
+        "player_2": -2.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 68392603,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 2.0,
+        "player_2": -2.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 3765669235,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 3.0,
+        "player_2": -3.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 3398685835,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2400,
+      "rewards": {
+        "player_1": 3.0,
+        "player_2": -3.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 4144932343,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2595,
+      "rewards": {
+        "player_1": 4.0,
+        "player_2": -4.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 1319076063,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 1653,
+      "rewards": {
+        "player_1": 5.0,
+        "player_2": -5.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 349705884,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 2.0,
+        "player_2": -2.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 2815098738,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 934,
+      "rewards": {
+        "player_1": 6.0,
+        "player_2": -6.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "CarBall-v0",
+      "seed": 4202686572,
+      "player_a": "player_1",
+      "player_b": "player_2",
+      "winner": "player_1",
+      "ticks": 2700,
+      "rewards": {
+        "player_1": 2.0,
+        "player_2": -2.0
+      },
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    }
+  ],
+  "leaderboard": {
+    "k_factor": 32.0,
+    "initial_elo": 1500.0,
+    "ratings": {
+      "baseline": {
+        "elo": 1635.499556253252,
+        "games_played": 20,
+        "wins": 17,
+        "losses": 2,
+        "draws": 1,
+        "win_rate": 0.85
+      },
+      "random": {
+        "elo": 1364.500443746748,
+        "games_played": 20,
+        "wins": 2,
+        "losses": 17,
+        "draws": 1,
+        "win_rate": 0.1
+      }
+    }
+  },
+  "total_matches": 20
+}

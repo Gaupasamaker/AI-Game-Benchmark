@@ -1,0 +1,1172 @@
+{
+  "matches": [
+    {
+      "game": "TacticFPS-v0",
+      "seed": 2746317213,
+      "player_a": "t1",
+      "player_b": "t2",
+      "agent_a": "baseline",
+      "agent_b": "random",
+      "sides": {
+        "player_1": "baseline",
+        "player_2": "random"
+      },
+      "winner": "t2",
+      "ticks": 120,
+      "rewards": {
+        "t1": -9.699999999999982,
+        "t2": 0.0,
+        "ct1": 0.0,
+        "ct2": 0.0
+      },
+      "final_scores": {
+        "player_1": 0,
+        "player_2": 0
+      },
+      "goal_events": [],
+      "events": [],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 14,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 16,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 18,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 20,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 22,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 24,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 26,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 28,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 30,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 32,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          }
+        ],
+        "violation_counts": {
+          "t1": 10
+        }
+      }
+    },
+    {
+      "game": "TacticFPS-v0",
+      "seed": 2746317213,
+      "player_a": "t1",
+      "player_b": "t2",
+      "agent_a": "random",
+      "agent_b": "baseline",
+      "sides": {
+        "player_1": "random",
+        "player_2": "baseline"
+      },
+      "winner": "player_2",
+      "ticks": 64,
+      "rewards": {
+        "t1": 0.0,
+        "t2": 0.0,
+        "ct1": 0.0,
+        "ct2": 0.0
+      },
+      "final_scores": {
+        "player_1": 0,
+        "player_2": 2
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 64,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t2"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "TacticFPS-v0",
+      "seed": 1181241943,
+      "player_a": "t1",
+      "player_b": "t2",
+      "agent_a": "baseline",
+      "agent_b": "random",
+      "sides": {
+        "player_1": "baseline",
+        "player_2": "random"
+      },
+      "winner": "t2",
+      "ticks": 120,
+      "rewards": {
+        "t1": -9.699999999999982,
+        "t2": 0.0,
+        "ct1": 0.0,
+        "ct2": 0.0
+      },
+      "final_scores": {
+        "player_1": 0,
+        "player_2": 0
+      },
+      "goal_events": [],
+      "events": [],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 14,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 16,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 18,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 20,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 22,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 24,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 26,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 28,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 30,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 32,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          }
+        ],
+        "violation_counts": {
+          "t1": 10
+        }
+      }
+    },
+    {
+      "game": "TacticFPS-v0",
+      "seed": 1181241943,
+      "player_a": "t1",
+      "player_b": "t2",
+      "agent_a": "random",
+      "agent_b": "baseline",
+      "sides": {
+        "player_1": "random",
+        "player_2": "baseline"
+      },
+      "winner": "player_2",
+      "ticks": 64,
+      "rewards": {
+        "t1": 0.0,
+        "t2": 0.0,
+        "ct1": 0.0,
+        "ct2": 0.0
+      },
+      "final_scores": {
+        "player_1": 0,
+        "player_2": 2
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 64,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t2"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "TacticFPS-v0",
+      "seed": 958682846,
+      "player_a": "t1",
+      "player_b": "t2",
+      "agent_a": "baseline",
+      "agent_b": "random",
+      "sides": {
+        "player_1": "baseline",
+        "player_2": "random"
+      },
+      "winner": "t2",
+      "ticks": 120,
+      "rewards": {
+        "t1": -9.699999999999982,
+        "t2": 0.0,
+        "ct1": 0.0,
+        "ct2": 0.0
+      },
+      "final_scores": {
+        "player_1": 0,
+        "player_2": 0
+      },
+      "goal_events": [],
+      "events": [],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 14,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 16,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 18,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 20,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 22,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 24,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 26,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 28,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 30,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 32,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          }
+        ],
+        "violation_counts": {
+          "t1": 10
+        }
+      }
+    },
+    {
+      "game": "TacticFPS-v0",
+      "seed": 958682846,
+      "player_a": "t1",
+      "player_b": "t2",
+      "agent_a": "random",
+      "agent_b": "baseline",
+      "sides": {
+        "player_1": "random",
+        "player_2": "baseline"
+      },
+      "winner": "player_2",
+      "ticks": 64,
+      "rewards": {
+        "t1": 0.0,
+        "t2": 0.0,
+        "ct1": 0.0,
+        "ct2": 0.0
+      },
+      "final_scores": {
+        "player_1": 0,
+        "player_2": 2
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 64,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t2"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    },
+    {
+      "game": "TacticFPS-v0",
+      "seed": 3163119785,
+      "player_a": "t1",
+      "player_b": "t2",
+      "agent_a": "baseline",
+      "agent_b": "random",
+      "sides": {
+        "player_1": "baseline",
+        "player_2": "random"
+      },
+      "winner": "t2",
+      "ticks": 120,
+      "rewards": {
+        "t1": -9.699999999999982,
+        "t2": 0.0,
+        "ct1": 0.0,
+        "ct2": 0.0
+      },
+      "final_scores": {
+        "player_1": 0,
+        "player_2": 0
+      },
+      "goal_events": [],
+      "events": [],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 14,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 16,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 18,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 20,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 22,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 24,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 26,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 28,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 30,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          },
+          {
+            "player_id": "t1",
+            "type": "invalid_action",
+            "tick": 32,
+            "details": "Acci\u00f3n inv\u00e1lida: {'move': 'STAY', 'aim_dir': 'N', 'shoot': False, 'plant': True, 'defuse': False, 'use_smoke': None, 'use_flash': None}"
+          }
+        ],
+        "violation_counts": {
+          "t1": 10
+        }
+      }
+    },
+    {
+      "game": "TacticFPS-v0",
+      "seed": 3163119785,
+      "player_a": "t1",
+      "player_b": "t2",
+      "agent_a": "random",
+      "agent_b": "baseline",
+      "sides": {
+        "player_1": "random",
+        "player_2": "baseline"
+      },
+      "winner": "player_2",
+      "ticks": 64,
+      "rewards": {
+        "t1": 0.0,
+        "t2": 0.0,
+        "ct1": 0.0,
+        "ct2": 0.0
+      },
+      "final_scores": {
+        "player_1": 0,
+        "player_2": 2
+      },
+      "goal_events": [],
+      "events": [
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 47,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t1"
+        },
+        {
+          "tick": 64,
+          "type": "kill",
+          "killer_team": "CT",
+          "victim_team": "T",
+          "killer": "ct2",
+          "victim": "t2"
+        }
+      ],
+      "anticheat": {
+        "config": {
+          "timeout_ms": 30.0,
+          "max_violations": 10,
+          "strict_mode": false
+        },
+        "violations": [],
+        "violation_counts": {}
+      }
+    }
+  ],
+  "leaderboard": {
+    "k_factor": 32.0,
+    "initial_elo": 1500.0,
+    "ratings": {
+      "baseline": {
+        "elo": 1594.950467633137,
+        "games_played": 8,
+        "wins": 8,
+        "losses": 0,
+        "draws": 0,
+        "win_rate": 1.0
+      },
+      "random": {
+        "elo": 1405.049532366863,
+        "games_played": 8,
+        "wins": 0,
+        "losses": 8,
+        "draws": 0,
+        "win_rate": 0.0
+      }
+    }
+  },
+  "total_matches": 8,
+  "side_swap": true
+}

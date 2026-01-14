@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Dashboard - Game Benchmark</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 20px;
+        }
+
+        .card.wide {
+            grid-column: span 2;
+        }
+
+        .card h3 {
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .file-selector {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .file-selector select {
+            flex: 1;
+            max-width: 350px;
+        }
+
+        .metadata-chips {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .chip {
+            background: var(--bg-hover);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .chip .label {
+            color: var(--text-dim);
+        }
+
+        .chip .value {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 280px;
+        }
+
+        .chart-container.small {
+            height: 200px;
+        }
+
+        .matchup-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+        }
+
+        .matchup-table th,
+        .matchup-table td {
+            padding: 8px 10px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .matchup-table th {
+            background: var(--bg-hover);
+            font-weight: 600;
+        }
+
+        .matchup-table td.highlight-win {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .matchup-table td.highlight-loss {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        .matchup-table td.neutral {
+            background: var(--bg-dark);
+            color: var(--text-dim);
+        }
+
+        .scoreline-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .scoreline-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background: var(--bg-dark);
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        .scoreline-item .score {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .scoreline-item .count {
+            color: var(--text-dim);
+        }
+
+        .highlight-box {
+            background: var(--bg-dark);
+            padding: 10px 14px;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-size: 0.85rem;
+        }
+
+        .highlight-box .title {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .first-goal-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .fg-stat {
+            background: var(--bg-dark);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .fg-stat .agent {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 0.85rem;
+        }
+
+        .fg-stat .tick {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        .fg-stat .count {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+        }
+
+        .match-filters {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .match-filters select,
+        .match-filters input {
+            padding: 6px 10px;
+            font-size: 0.8rem;
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+        }
+
+        .match-table-container {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .match-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+        }
+
+        .match-table th {
+            background: var(--bg-hover);
+            padding: 8px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .match-table th:hover {
+            background: var(--bg-card);
+        }
+
+        .match-table th .sort-icon {
+            margin-left: 4px;
+            opacity: 0.5;
+        }
+
+        .match-table th.sorted .sort-icon {
+            opacity: 1;
+        }
+
+        .match-table td {
+            padding: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .match-table tr:hover {
+            background: var(--bg-hover);
+            cursor: pointer;
+        }
+
+        .match-table .win {
+            color: #10b981;
+        }
+
+        .match-table .loss {
+            color: #ef4444;
+        }
+
+        .match-table .draw {
+            color: #eab308;
+        }
+
+        .badge {
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .badge.stomp {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        .badge.close {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-dim);
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 24px;
+            max-width: 700px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal h2 {
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--text-dim);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .modal-close:hover {
+            color: var(--text);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-event {
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .timeline-event::before {
+            content: '⚽';
+            position: absolute;
+            left: -26px;
+            font-size: 14px;
+        }
+
+        .timeline-event .tick {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+
+        .timeline-event .scorer {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .timeline-event .score {
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        .match-summary {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 16px;
+            background: var(--bg-dark);
+            border-radius: 8px;
+        }
+
+        .match-summary .agent {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .match-summary .vs {
+            color: var(--text-dim);
+            align-self: center;
+        }
+
+        .match-summary .final-score {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .anticheat-panel {
+            padding: 16px;
+            background: var(--bg-dark);
+            border-radius: 8px;
+        }
+
+        .anticheat-panel.clean {
+            border: 1px solid #10b981;
+        }
+
+        .anticheat-panel.violations {
+            border: 1px solid #ef4444;
+        }
+
+        .violation-list {
+            margin-top: 12px;
+        }
+
+        .violation-item {
+            padding: 8px;
+            margin-bottom: 8px;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+
+        .violation-item .reason {
+            color: #ef4444;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo"><span class="logo-icon">📊</span>
+                <h1>Tournament Dashboard</h1>
+            </div>
+            <nav class="nav"><a href="/" class="nav-btn">← Match Viewer</a></nav>
+        </header>
+
+        <div class="file-selector">
+            <label>Archivo:</label>
+            <select id="file-select">
+                <option value="">-- Selecciona --</option>
+            </select>
+            <button id="load-btn" class="btn btn-primary">📂 Cargar</button>
+            <button id="download-btn" class="btn btn-secondary" disabled>⬇ Descargar</button>
+        </div>
+
+        <div class="metadata-chips" id="metadata-chips">
+            <div class="chip"><span class="label">Juego:</span> <span class="value" id="chip-game">-</span></div>
+            <div class="chip"><span class="label">Partidas:</span> <span class="value" id="chip-matches">-</span></div>
+            <div class="chip"><span class="label">Agentes:</span> <span class="value" id="chip-agents">-</span></div>
+            <div class="chip"><span class="label">Goles:</span> <span class="value" id="chip-goals">-</span></div>
+            <div class="chip"><span class="label">⚽/match:</span> <span class="value" id="chip-avg-goals">-</span></div>
+            <div class="chip"><span class="label">⏱️/match:</span> <span class="value" id="chip-avg-ticks">-</span>
+            </div>
+            <div class="chip"><span class="label">1st Goal:</span> <span class="value" id="chip-first-goal">-</span>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>🏆 Leaderboard ELO</h3>
+                <div id="leaderboard-container" class="leaderboard">
+                    <div class="empty-state">Selecciona un archivo</div>
+                </div>
+                <div id="highlights-box" class="highlight-box" style="display: none;">
+                    <span class="title">🥇 Top:</span> <span id="top-agent">-</span> |
+                    <span class="title">🤝 Most Draws:</span> <span id="most-draws">-</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>📊 Win Rate</h3>
+                <div class="chart-container"><canvas id="winrate-chart"></canvas></div>
+            </div>
+            <div class="card">
+                <h3>📈 Goal Diff</h3>
+                <div class="chart-container"><canvas id="goaldiff-chart"></canvas></div>
+            </div>
+            <div class="card" id="firstgoal-card">
+                <h3>⏱️ First Goal Timing</h3>
+                <div class="chart-container small"><canvas id="firstgoal-chart"></canvas></div>
+                <div id="firstgoal-stats" class="first-goal-stats"></div>
+            </div>
+            <div class="card">
+                <h3>🎯 Top Scorelines</h3>
+                <div id="scorelines-container" class="scoreline-list"></div>
+            </div>
+            <div class="card" id="eventstats-card" style="display: none;">
+                <h3>⚔️ Event Stats</h3>
+                <div id="eventstats-container"></div>
+            </div>
+            <div class="card" id="sidebias-card" style="display: none;">
+                <h3>⚖️ Side Bias Check</h3>
+                <div id="sidebias-container"></div>
+            </div>
+            <div class="card">
+                <h3>🛡️ Anti-Cheat</h3>
+                <div id="anticheat-container" class="anticheat-panel clean">
+                    <div class="empty-state">Sin datos</div>
+                </div>
+            </div>
+            <div class="card wide">
+                <h3>⚔️ Matchup Matrix</h3>
+                <div id="matchup-container"></div>
+            </div>
+            <div class="card wide">
+                <h3>📋 Partidas <small style="font-weight: normal; color: var(--text-dim);">(clic header para ordenar,
+                        fila para timeline)</small></h3>
+                <div class="match-filters">
+                    <select id="filter-agent">
+                        <option value="">Todos agentes</option>
+                    </select>
+                    <select id="filter-type">
+                        <option value="">Todos</option>
+                        <option value="stomp">Stomps (≥5)</option>
+                        <option value="close">Cerradas (≤1)</option>
+                        <option value="draw">Empates</option>
+                    </select>
+                    <input type="text" id="filter-search" placeholder="Buscar...">
+                    <span id="match-count" style="color: var(--text-dim); font-size: 0.8rem;"></span>
+                </div>
+                <div id="matches-table-container" class="match-table-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="replay-modal">
+        <div class="modal">
+            <h2><span>🎬 Match Replay</span><button class="modal-close" onclick="closeModal()">&times;</button></h2>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script>
+        const STORAGE_KEY = 'dashboard_last_file';
+        let charts = {};
+        let currentData = null;
+        let currentFile = null;
+        let allMatches = [];
+        let filteredMatches = [];
+        let sortColumn = null;
+        let sortAsc = true;
+
+        const COLORS = {
+            win: 'rgba(16, 185, 129, 0.85)',
+            draw: 'rgba(234, 179, 8, 0.85)',
+            loss: 'rgba(239, 68, 68, 0.85)',
+            agents: ['#6366f1', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4']
+        };
+
+        async function loadFileList() {
+            const resp = await fetch('/api/result_files');
+            const files = await resp.json();
+            const select = document.getElementById('file-select');
+            select.innerHTML = '<option value="">-- Selecciona Dataset --</option>';
+
+            // Agrupar por juego
+            const groups = {};
+            const GAME_ICONS = {
+                'tacticfps': '🔫',
+                'carball': '🚗',
+                'micorts': '⚔️',
+                'unknown': '❓'
+            };
+
+            files.forEach(f => {
+                const g = f.game || 'unknown';
+                if (!groups[g]) groups[g] = [];
+                groups[g].push(f);
+            });
+
+            // Ordenar grupos: carball, micorts, tacticfps, others
+            const sortedGames = Object.keys(groups).sort();
+
+            sortedGames.forEach(game => {
+                const group = document.createElement('optgroup');
+                const icon = GAME_ICONS[game] || '📁';
+                group.label = `${icon} ${game.toUpperCase()}`;
+
+                groups[game].forEach(f => {
+                    const opt = document.createElement('option');
+                    opt.value = f.path;
+                    const matchCount = f.matches ? ` • ${f.matches} matches` : '';
+                    const size = Math.round(f.size / 1024);
+                    // Nombre más limpio? f.name
+                    opt.textContent = `${f.name} (${size}KB${matchCount})`;
+                    group.appendChild(opt);
+                });
+
+                select.appendChild(group);
+            });
+
+            // Cargar último archivo usado
+            const lastFile = localStorage.getItem(STORAGE_KEY);
+            if (lastFile && files.some(f => f.path === lastFile)) {
+                select.value = lastFile;
+                loadResults(lastFile);
+            }
+        }
+
+        async function loadResults(path) {
+            if (!path) return;
+            const resp = await fetch(`/api/results?file=${encodeURIComponent(path)}`);
+            if (!resp.ok) return alert('Error cargando');
+            currentData = await resp.json();
+            currentFile = path;
+            allMatches = currentData.matches || [];
+            filteredMatches = [...allMatches];
+            document.getElementById('download-btn').disabled = false;
+
+            // Guardar en localStorage
+            localStorage.setItem(STORAGE_KEY, path);
+
+            populateAgentFilter(currentData.metadata.agents);
+            renderDashboard(currentData);
+        }
+
+        function downloadJson() { if (currentFile) window.location.href = `/api/download?file=${encodeURIComponent(currentFile)}`; }
+
+        function populateAgentFilter(agents) {
+            const s = document.getElementById('filter-agent');
+            s.innerHTML = '<option value="">Todos agentes</option>';
+            agents.forEach(a => { const o = document.createElement('option'); o.value = a; o.textContent = a; s.appendChild(o); });
+        }
+
+        function renderDashboard(data) {
+            const m = data.metadata;
+            document.getElementById('chip-game').textContent = m.game || '-';
+            document.getElementById('chip-matches').textContent = m.totalMatches || 0;
+            document.getElementById('chip-agents').textContent = m.agentCount || 0;
+            document.getElementById('chip-goals').textContent = m.totalGoals || 0;
+            document.getElementById('chip-avg-goals').textContent = m.avgGoalsPerMatch || 0;
+            document.getElementById('chip-avg-ticks').textContent = m.avgTicksPerMatch ? `${m.avgTicksPerMatch}` : '-';
+            document.getElementById('chip-first-goal').textContent = m.avgFirstGoalTick ? `tick ${m.avgFirstGoalTick}` : '-';
+
+            // Condicionar widgets según tipo de juego
+            const hasGoals = data.firstGoalTicks?.length > 0;
+            const hasEvents = data.eventStats?.totalEvents > 0;
+            const hasSideBias = data.sideBiasStats?.byAgent && Object.keys(data.sideBiasStats.byAgent).length > 0;
+
+            document.getElementById('firstgoal-card').style.display = hasGoals ? 'block' : 'none';
+            document.getElementById('eventstats-card').style.display = hasEvents ? 'block' : 'none';
+            document.getElementById('sidebias-card').style.display = hasSideBias ? 'block' : 'none';
+
+            renderLeaderboard(data.leaderboard);
+            renderHighlights(data.leaderboard);
+            renderWinrateChart(data.winrateData);
+            renderGoalDiffChart(data.goalDiffHistogram);
+            renderFirstGoalChart(data.firstGoalHistogram, data.firstGoalAvgByAgent);
+            renderScorelines(data.topScorelines);
+            renderMatchupMatrix(data.matchups, m.agents);
+            renderMatchesTable(filteredMatches);
+            renderAnticheat(data.anticheatStats);
+            renderEventStats(data.eventStats);
+            renderSideBias(data.sideBiasStats, m.sideSwap);
+        }
+
+        function renderLeaderboard(lb) {
+            const c = document.getElementById('leaderboard-container');
+            if (!lb?.length) { c.innerHTML = '<div class="empty-state">No hay datos</div>'; return; }
+            let html = '<div class="lb-row header"><span class="lb-rank">#</span><span class="lb-name">Agent</span><span class="lb-stats">W/L/D</span><span class="lb-elo">ELO</span></div>';
+            lb.forEach((e, i) => { html += `<div class="lb-row"><span class="lb-rank">${i + 1}</span><span class="lb-name">${e.name}</span><span class="lb-stats">${e.wins}/${e.losses}/${e.draws}</span><span class="lb-elo">${e.elo}</span></div>`; });
+            c.innerHTML = html;
+        }
+
+        function renderHighlights(lb) {
+            const b = document.getElementById('highlights-box');
+            if (!lb?.length) { b.style.display = 'none'; return; }
+            b.style.display = 'block';
+            document.getElementById('top-agent').textContent = lb[0]?.name || '-';
+            const md = lb.reduce((a, b) => a.draws > b.draws ? a : b);
+            document.getElementById('most-draws').textContent = `${md.name} (${md.draws})`;
+        }
+
+        function renderWinrateChart(data) {
+            const ctx = document.getElementById('winrate-chart').getContext('2d');
+            if (charts.winrate) charts.winrate.destroy();
+            if (!data?.length) return;
+            charts.winrate = new Chart(ctx, {
+                type: 'bar', data: {
+                    labels: data.map(d => d.agent), datasets: [
+                        { label: 'W', data: data.map(d => d.winPct), backgroundColor: COLORS.win },
+                        { label: 'D', data: data.map(d => d.drawPct), backgroundColor: COLORS.draw },
+                        { label: 'L', data: data.map(d => d.lossPct), backgroundColor: COLORS.loss }
+                    ]
+                }, options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y', scales: { x: { stacked: true, max: 100 }, y: { stacked: true } }, plugins: { legend: { position: 'bottom' } } }
+            });
+        }
+
+        function renderGoalDiffChart(data) {
+            const ctx = document.getElementById('goaldiff-chart').getContext('2d');
+            if (charts.goalDiff) charts.goalDiff.destroy();
+            if (!data?.length) return;
+            charts.goalDiff = new Chart(ctx, { type: 'bar', data: { labels: data.map(d => d.diff >= 0 ? `+${d.diff}` : `${d.diff}`), datasets: [{ data: data.map(d => d.count), backgroundColor: data.map(d => d.diff > 0 ? COLORS.win : d.diff < 0 ? COLORS.loss : COLORS.draw) }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } } });
+        }
+
+        function renderFirstGoalChart(histogram, avgByAgent) {
+            const ctx = document.getElementById('firstgoal-chart').getContext('2d');
+            if (charts.firstGoal) charts.firstGoal.destroy();
+            if (histogram?.length) {
+                charts.firstGoal = new Chart(ctx, { type: 'bar', data: { labels: histogram.map(d => `${d.tick}-${d.tick + 199}`), datasets: [{ data: histogram.map(d => d.count), backgroundColor: '#6366f1' }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } } });
+            }
+            document.getElementById('firstgoal-stats').innerHTML = avgByAgent?.length ? avgByAgent.map(d => `<div class="fg-stat"><div class="agent">${d.agent}</div><div class="tick">${d.avgTick}</div><div class="count">${d.count} 1st goals</div></div>`).join('') : '';
+        }
+
+        function renderScorelines(data) {
+            document.getElementById('scorelines-container').innerHTML = data?.length ? data.map(s => `<div class="scoreline-item"><span class="score">${s.score}</span><span class="count">${s.count}</span></div>`).join('') : '<div class="empty-state">Sin datos</div>';
+        }
+
+        function renderMatchupMatrix(matchups, agents) {
+            const c = document.getElementById('matchup-container');
+            if (!agents?.length) { c.innerHTML = '<div class="empty-state">No hay datos</div>'; return; }
+            let html = '<table class="matchup-table"><tr><th>vs</th>';
+            agents.forEach(a => html += `<th>${a}</th>`);
+            html += '</tr>';
+            agents.forEach(a1 => {
+                html += `<tr><th>${a1}</th>`;
+                agents.forEach(a2 => {
+                    if (a1 === a2) { html += '<td class="neutral">-</td>'; }
+                    else {
+                        const m = matchups[a1]?.[a2] || { wins: 0, losses: 0, draws: 0, total: 0 };
+                        const t = m.total || (m.wins + m.losses + m.draws);
+                        const wr = t > 0 ? Math.round(m.wins / t * 100) : 0;
+                        const css = m.wins > m.losses ? 'highlight-win' : m.losses > m.wins ? 'highlight-loss' : 'neutral';
+                        html += `<td class="${css}" title="WR ${wr}% (N=${t})">${m.wins}-${m.losses}-${m.draws}</td>`;
+                    }
+                });
+                html += '</tr>';
+            });
+            c.innerHTML = html + '</table>';
+        }
+
+        function getMatchScore(m) {
+            const sc = m.final_scores || {};
+            return { sA: sc[m.player_a] || 0, sB: sc[m.player_b] || 0 };
+        }
+
+        function renderMatchesTable(matches) {
+            const c = document.getElementById('matches-table-container');
+            document.getElementById('match-count').textContent = `${matches.length} partidas`;
+            if (!matches?.length) { c.innerHTML = '<div class="empty-state">Sin partidas</div>'; return; }
+
+            const cols = [
+                { key: 'agents', label: 'A vs B', sort: (m) => m.agent_a },
+                { key: 'score', label: 'Score', sort: (m) => { const s = getMatchScore(m); return s.sA - s.sB; } },
+                { key: 'winner', label: 'Winner', sort: (m) => m.winner ? (m.winner === m.player_a ? m.agent_a : m.agent_b) : 'zzz' },
+                { key: 'ticks', label: 'Ticks', sort: (m) => m.ticks || 0 },
+                { key: 'tags', label: 'Tags', sort: null }
+            ];
+
+            let html = '<table class="match-table"><tr>';
+            cols.forEach(col => {
+                const sorted = sortColumn === col.key;
+                const icon = sorted ? (sortAsc ? '▲' : '▼') : '⇅';
+                const clickable = col.sort ? `onclick="sortTable('${col.key}')"` : '';
+                html += `<th ${clickable} class="${sorted ? 'sorted' : ''}">${col.label}<span class="sort-icon">${col.sort ? icon : ''}</span></th>`;
+            });
+            html += '</tr>';
+
+            matches.slice(0, 200).forEach((m, i) => {
+                const { sA, sB } = getMatchScore(m);
+                const diff = Math.abs(sA - sB);
+                const winner = m.winner === m.player_a ? m.agent_a : m.winner === m.player_b ? m.agent_b : 'Draw';
+                const wClass = m.winner === m.player_a ? 'win' : m.winner === m.player_b ? 'loss' : 'draw';
+                let tags = diff >= 5 ? '<span class="badge stomp">Stomp</span>' : diff <= 1 && m.winner ? '<span class="badge close">Close</span>' : '';
+                const idx = allMatches.indexOf(m);
+                html += `<tr onclick="showMatchReplay(${idx})"><td>${m.agent_a} vs ${m.agent_b}</td><td>${sA}-${sB}</td><td class="${wClass}">${winner}</td><td>${m.ticks || '-'}</td><td>${tags || '-'}</td></tr>`;
+            });
+            c.innerHTML = html + '</table>';
+        }
+
+        function sortTable(column) {
+            if (sortColumn === column) {
+                sortAsc = !sortAsc;
+            } else {
+                sortColumn = column;
+                sortAsc = true;
+            }
+
+            const cols = {
+                agents: (m) => m.agent_a,
+                score: (m) => { const s = getMatchScore(m); return s.sA - s.sB; },
+                winner: (m) => m.winner ? (m.winner === m.player_a ? m.agent_a : m.agent_b) : 'zzz',
+                ticks: (m) => m.ticks || 0
+            };
+
+            const fn = cols[column];
+            if (fn) {
+                filteredMatches.sort((a, b) => {
+                    const va = fn(a), vb = fn(b);
+                    if (typeof va === 'string') return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+                    return sortAsc ? va - vb : vb - va;
+                });
+            }
+            renderMatchesTable(filteredMatches);
+        }
+
+        function renderAnticheat(stats) {
+            const c = document.getElementById('anticheat-container');
+            if (!stats || stats.totalViolations === 0) {
+                c.className = 'anticheat-panel clean';
+                c.innerHTML = '<div style="text-align:center;"><div style="font-size:2rem;">✅</div><div style="color:#10b981;font-weight:600;">Sin violaciones</div><div style="font-size:0.8rem;color:var(--text-dim);">Todas las partidas limpias</div></div>';
+                return;
+            }
+            c.className = 'anticheat-panel violations';
+            let html = `<div style="font-weight:600;color:#ef4444;">⚠️ ${stats.totalViolations} violaciones</div><div style="margin-top:8px;">`;
+            for (const [agent, count] of Object.entries(stats.byAgent)) html += `<span style="margin-right:10px;">${agent}: <strong>${count}</strong></span>`;
+            html += '</div>';
+            if (stats.examples?.length) {
+                html += '<div class="violation-list">';
+                stats.examples.forEach(e => html += `<div class="violation-item"><span class="reason">${e.reason}</span> - ${e.agent} @ tick ${e.tick || '?'}</div>`);
+                html += '</div>';
+            }
+            c.innerHTML = html;
+        }
+
+        const EVENT_ICONS = {
+            'unit_killed': '💀',
+            'building_destroyed': '🏚️',
+            'zone_captured': '🚩',
+            'kill': '💀',
+            'bomb_plant': '💣',
+            'bomb_defuse': '✂️',
+            'bomb_explode': '💥',
+            'goal': '⚽'
+        };
+
+        function renderEventStats(stats) {
+            const c = document.getElementById('eventstats-container');
+            if (!stats || stats.totalEvents === 0) {
+                c.innerHTML = '<div class="empty-state">Sin eventos</div>';
+                return;
+            }
+
+            let html = `<div style="font-weight:600;color:var(--accent);margin-bottom:12px;">📊 ${stats.totalEvents} eventos</div>`;
+
+            // Por tipo
+            html += '<div style="margin-bottom:12px;"><strong>Por tipo:</strong><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;">';
+            for (const [type, count] of Object.entries(stats.byType || {})) {
+                const icon = EVENT_ICONS[type] || '⚡';
+                html += `<span class="chip"><span class="label">${icon} ${type}:</span><span class="value">${count}</span></span>`;
+            }
+            html += '</div></div>';
+
+            // Por agente (player_id)
+            if (stats.byAgent && Object.keys(stats.byAgent).length > 0) {
+                html += '<div><strong>Por jugador:</strong><div style="margin-top:6px;">';
+                for (const [agent, types] of Object.entries(stats.byAgent)) {
+                    let details = [];
+                    for (const [t, c] of Object.entries(types)) {
+                        const icon = EVENT_ICONS[t] || '';
+                        if (c > 0) details.push(`${icon}${t}: ${c}`);
+                    }
+                    html += `<div style="padding:6px;background:var(--bg-dark);border-radius:4px;margin-bottom:4px;font-size:0.8rem;">
+                        <strong>${agent}</strong>: ${details.join(' | ')}
+                    </div>`;
+                }
+                html += '</div></div>';
+            }
+
+            c.innerHTML = html;
+        }
+
+        const SIDE_NAMES = {
+            'carball': { p1: 'Generic Blue', p2: 'Generic Orange' }, // Simple override
+            'micorts': { p1: 'P1', p2: 'P2' },
+            'tacticfps': { p1: 'Terrorist', p2: 'Counter-Terrorist' }
+        };
+
+        function renderSideBias(stats, sideSwapEnabled) {
+            const c = document.getElementById('sidebias-container');
+            if (!stats || !stats.byAgent) {
+                c.innerHTML = '<div class="empty-state">Sin datos de lados</div>';
+                return;
+            }
+
+            // Intentar obtener nombres de roles
+            // Requeriría pasar 'game' a renderSideBias, pero por ahora usamos genéricos P1/P2
+            // O mejor: inferir del contexto data.metadata si estuviera disponible.
+            // Para asegurar respuesta rápida, usamos etiquetas mejoradas.
+            const p1Label = "Player 1 (Blue/T)";
+            const p2Label = "Player 2 (Orange/CT)";
+
+            const p1Wr = stats.p1WinRate || 0;
+            const p2Wr = stats.p2WinRate || 0;
+            const diff = Math.abs(p1Wr - p2Wr);
+            const biasLevel = diff < 5 ? '✅ Equilibrado' : diff < 15 ? '⚠️ Leve bias' : '🚨 Bias alto';
+            const badgeClass = diff < 5 ? 'balanced' : diff < 15 ? 'slight' : 'high';
+
+            let html = `<div style="margin-bottom:12px;">
+                <div style="font-weight:600;color:var(--accent);">Global: ${p1Label} ${p1Wr}% vs ${p2Label} ${p2Wr}%</div>
+                <div style="display:flex;gap:12px;margin:8px 0;font-size:0.85rem;">
+                    <span>📊 Diff: ${diff.toFixed(1)}%</span>
+                    <span>${biasLevel}</span>
+                    <span style="color:${sideSwapEnabled ? '#10b981' : '#f59e0b'}">
+                        ${sideSwapEnabled ? '🔄 Side Swap ON' : '⚠️ Side Swap OFF'}
+                    </span>
+                </div>
+            </div>`;
+
+            // Winrate por agente en cada lado
+            html += '<div><strong>Winrate por agente/lado:</strong><div style="margin-top:6px;">';
+            for (const [agent, data] of Object.entries(stats.byAgent)) {
+                const p1Diff = data.as_p1 - data.as_p2;
+                const arrow = p1Diff > 5 ? '↗️' : p1Diff < -5 ? '↘️' : '➡️';
+                html += `<div style="padding:6px;background:var(--bg-dark);border-radius:4px;margin-bottom:4px;font-size:0.8rem;display:flex;justify-content:space-between;">
+                    <strong>${agent}</strong>
+                    <span>P1: ${data.as_p1}% (${data.p1_games}g) ${arrow} P2: ${data.as_p2}% (${data.p2_games}g)</span>
+                </div>`;
+            }
+            html += '</div></div>';
+
+            c.innerHTML = html;
+        }
+
+        function showMatchReplay(index) {
+            const match = allMatches[index];
+            if (!match) return;
+            const { sA, sB } = getMatchScore(match);
+            const winner = match.winner === match.player_a ? match.agent_a : match.winner === match.player_b ? match.agent_b : 'Empate';
+
+            let html = `<div class="match-summary"><div><div class="agent">${match.agent_a}</div></div><div class="vs"><div class="final-score">${sA} - ${sB}</div><div>→ ${winner}</div></div><div><div class="agent">${match.agent_b}</div></div></div>
+                <div style="display:flex;gap:20px;margin-bottom:16px;font-size:0.85rem;color:var(--text-dim);"><span>🎮 ${match.game}</span><span>🎲 Seed: ${match.seed}</span><span>⏱️ ${match.ticks} ticks</span></div>`;
+
+            const events = match.goal_events || [];
+            if (events.length) {
+                html += '<h3>⚽ Goal Timeline</h3><div class="timeline">';
+                events.forEach(e => {
+                    const scorer = e.scorer === match.player_a ? match.agent_a : match.agent_b;
+                    const scores = e.scores || {};
+                    html += `<div class="timeline-event"><div class="tick">Tick ${e.tick}</div><div class="scorer">${scorer}</div><div class="score">${scores[match.player_a] || 0} - ${scores[match.player_b] || 0}</div></div>`;
+                });
+                html += '</div>';
+            } else {
+                html += '<div class="empty-state">Sin eventos de gol</div>';
+            }
+
+            document.getElementById('modal-content').innerHTML = html;
+            document.getElementById('replay-modal').classList.add('active');
+        }
+
+        function closeModal() { document.getElementById('replay-modal').classList.remove('active'); }
+
+        function filterMatches() {
+            const agent = document.getElementById('filter-agent').value;
+            const type = document.getElementById('filter-type').value;
+            const search = document.getElementById('filter-search').value.toLowerCase();
+
+            filteredMatches = allMatches.filter(m => {
+                if (agent && m.agent_a !== agent && m.agent_b !== agent) return false;
+                if (type) {
+                    const { sA, sB } = getMatchScore(m);
+                    const diff = Math.abs(sA - sB);
+                    if (type === 'stomp' && diff < 5) return false;
+                    if (type === 'close' && diff > 1) return false;
+                    if (type === 'draw' && m.winner) return false;
+                }
+                if (search && !`${m.agent_a} ${m.agent_b} ${m.seed}`.toLowerCase().includes(search)) return false;
+                return true;
+            });
+
+            // Re-apply sort if any
+            if (sortColumn) sortTable(sortColumn);
+            else renderMatchesTable(filteredMatches);
+        }
+
+        // Events
+        document.getElementById('load-btn').addEventListener('click', () => loadResults(document.getElementById('file-select').value));
+        document.getElementById('download-btn').addEventListener('click', downloadJson);
+        document.getElementById('file-select').addEventListener('change', e => { if (e.target.value) loadResults(e.target.value); });
+        document.getElementById('filter-agent').addEventListener('change', filterMatches);
+        document.getElementById('filter-type').addEventListener('change', filterMatches);
+        document.getElementById('filter-search').addEventListener('input', filterMatches);
+        document.getElementById('replay-modal').addEventListener('click', e => { if (e.target.id === 'replay-modal') closeModal(); });
+
+        loadFileList();
+    </script>
+</body>
+
+</html>

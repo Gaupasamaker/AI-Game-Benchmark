@@ -1,0 +1,20 @@
+[project]
+name = "game-benchmark"
+version = "0.1.0"
+description = "Benchmark IA-vs-IA con mini-juegos competitivos"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+game-benchmark = "game_benchmark.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
